@@ -22,7 +22,11 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
       </div>
       <div className="flex gap-3">
         <Link to={`user-profile/${user?._id}`} className="hidden md:block">
-          <img src={user.image} alt="user" className="w-14 h-12 rounded-lg" />
+          <img
+            src={user.image}
+            alt="user"
+            className="w-14 h-12 rounded-lg hover:rounded-2xl transition-all duration-500 ease-in-out"
+          />
         </Link>
         <Link
           to="create-pin"
