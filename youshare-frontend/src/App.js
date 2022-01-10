@@ -8,9 +8,8 @@ import { fetchUser } from "./utils/fetchUser";
 const App = () => {
   const navigate = useNavigate();
 
+  const user = fetchUser();
   useEffect(() => {
-    const user = fetchUser();
-
     if (!user) navigate("/login");
   }, []);
 
