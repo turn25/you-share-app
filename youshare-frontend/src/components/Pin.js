@@ -102,12 +102,12 @@ const Pin = ({ pin }) => {
                   href={destination}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-white flex items-center gap-2 text-black font-bold p-2 px-4 rounded-full opacity-75 hover:opacity-100 hover:shadow-md transition ease-in"
+                  className="bg-white flex items-center gap-2 text-sm 2xl:text-base text-black font-bold p-2 px-4 rounded-full opacity-75 hover:opacity-100 hover:shadow-md transition ease-in"
                 >
                   <BsFillArrowUpRightCircleFill />
-                  {destination.length > 20
-                    ? destination.slice(8, 20)
-                    : destination.slice(8)}
+                  {destination.length > 15
+                    ? `${destination.slice(0, 15)}...`
+                    : destination}
                 </a>
               )}
               {postedBy?._id === user?.googleId && (
