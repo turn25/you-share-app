@@ -175,7 +175,7 @@ const CreatePin = ({ user }) => {
               </p>
               <select
                 onChange={(e) => setCategory(e.target.value)}
-                className="outline-none w-4/5 text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
+                className="outline-none w-4/5 text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer capitalize"
               >
                 <option value="other" className="bg-white">
                   Select Category
